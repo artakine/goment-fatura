@@ -82,12 +82,9 @@
                 <div class="card service-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-paint-brush fa-3x mb-3 text-primary"></i>
-                        <h3>Logo Tasarım</h3>
-                        <div class="h4">₺299</div>
+                        <h3>Script Satış</h3>
+                        <div class="h4">₺250</div>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>Özgün logo tasarımı</li>
-                            <li>Sınırsız revize</li>
-                            <li>Vektörel dosyalar</li>
                         </ul>
                         <button class="btn btn-primary btn-lg w-100 pulse" onclick="purchaseService(1)">
                             <i class="fas fa-file-invoice me-2"></i>Fatura Kes
@@ -101,12 +98,9 @@
                 <div class="card service-card h-100">
                     <div class="card-body text-center">
                         <i class="fas fa-code fa-3x mb-3 text-primary"></i>
-                        <h3>Web Tasarım</h3>
-                        <div class="h4">₺900</div>
+                        <h3>Paket Satış</h3>
+                        <div class="h4">₺500</div>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>Responsive tasarım</li>
-                            <li>SEO uyumlu</li>
-                            <li>1 yıl destek</li>
                         </ul>
                         <button class="btn btn-primary btn-lg w-100 pulse" onclick="purchaseService(2)">
                             <i class="fas fa-file-invoice me-2"></i>Fatura Kes
@@ -120,12 +114,9 @@
                 <div class="card service-card h-100">
                     <div class="card-body text-center">
                         <i class="fab fa-instagram fa-3x mb-3 text-primary"></i>
-                        <h3>İnstagram</h3>
-                        <div class="h4">₺250</div>
+                        <h3>Anticheat Satış</h3>
+                        <div class="h4">₺350</div>
                         <ul class="list-unstyled mt-3 mb-4">
-                            <li>Profesyonel yönetim</li>
-                            <li>İçerik üretimi</li>
-                            <li>Raporlama</li>
                         </ul>
                         <button class="btn btn-primary btn-lg w-100 pulse" onclick="purchaseService(3)">
                             <i class="fas fa-file-invoice me-2"></i>Fatura Kes
@@ -176,13 +167,13 @@
     <script>
         // Hizmet verileri (KDV %5 olarak hesaplanacak)
         const services = {
-            1: { id: 1, name: "Logo Tasarım", price: 299 },  // KDV: 15 TL (Toplam: 315 TL)
-            2: { id: 2, name: "Web Tasarım", price: 900 },    // KDV: 30 TL (Toplam: 630 TL)
-            3: { id: 3, name: "Sosyal Medya Yönetimi", price: 250 } // KDV: 12.5 TL (Toplam: 262.5 TL)
+            1: { id: 1, name: "Script Satış", price: 250 },  // KDV: 15 TL (Toplam: 315 TL)
+            2: { id: 2, name: "Paket Satış", price: 500 },    // KDV: 30 TL (Toplam: 630 TL)
+            3: { id: 3, name: "Anticheat SAtış", price: 350 } // KDV: 12.5 TL (Toplam: 262.5 TL)
         };
 
         // Discord Webhook URL (KENDİ WEBHOOK URL'NİZİ EKLEYİN)
-        const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1405615493284495461/YAL7aC50xVolcfqkwiLjLy2sJgyWy9_UGDRgCKTqyAzIecg5CtraRt3NiVYYF6jZ43Et";
+        const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1405632023154004149/PP6frv3U_7W1lqxNKbri27vQ8JZkHNfXV_fOINmUAhVxu8cflF3pgBRXDfkabC6iRl3l";
 
         let currentService = null;
         let customerData = {};
@@ -195,7 +186,7 @@
             const password = document.getElementById('loginPassword').value;
             
             // Sadece admin girişine izin ver
-            if (email === 'admin@gmail.com' && password === 'admin123') {
+            if (email === 'bobkralpro@gmail.com' && password === 'artakine') {
                 isAdminLoggedIn = true;
                 document.getElementById('loginContainer').style.display = 'none';
                 document.getElementById('mainContent').style.display = 'block';
